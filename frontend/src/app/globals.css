@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #18181b;
+
+  /* Paleta CCHIA — ver .claude/skills/cchia-design/SKILL.md */
+  --color-primary: #b1e346;
+  --color-ink: #18181b;
+  --color-navy-900: #1a365d;
+  --color-navy-700: #2b77ad;
+  --color-navy-500: #4a90c2;
+  --color-navy-100: #e6f3ff;
+  --color-border: #dce0d3;
+  --color-border-soft: #d9e0c5;
+
+  /* Botones reales del sitio: NO son lima — gradiente oscuro con texto blanco */
+  --color-btn-start: #1e293b;
+  --color-btn-end: #0f172a;
+  --color-border-btn: #edf0e6;
+  --shadow-btn:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--color-primary);
+  --color-ink: var(--color-ink);
+  --color-navy-900: var(--color-navy-900);
+  --color-navy-700: var(--color-navy-700);
+  --color-navy-500: var(--color-navy-500);
+  --color-navy-100: var(--color-navy-100);
+  --color-border: var(--color-border);
+  --color-border-soft: var(--color-border-soft);
+  --color-btn-start: var(--color-btn-start);
+  --color-btn-end: var(--color-btn-end);
+  --color-border-btn: var(--color-border-btn);
+  --shadow-btn: var(--shadow-btn);
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
+  --radius-DEFAULT: 12px;
+  --radius-medium: 20px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-ink);
+}
