@@ -30,6 +30,13 @@ export default function DashboardLayout({
           />
           <span className="text-ink/50 text-sm">Panel interno</span>
         </div>
+
+        <a
+          href="/api/auth/logout"
+          className="border-border-btn text-ink hover:bg-primary/10 rounded-full border px-4 py-1.5 text-sm font-medium transition"
+        >
+          Cerrar sesión
+        </a>
       </div>
 
       <nav className="border-border text-ink/55 flex gap-5 overflow-x-auto border-b px-4 text-sm whitespace-nowrap sm:gap-8 sm:px-8 lg:px-16">
