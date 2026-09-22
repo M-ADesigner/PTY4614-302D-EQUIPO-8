@@ -6,3 +6,4 @@ next
 .env*.local
 *.tsbuildinfo
 .claude/skills/cchia-design/
+frontend/
