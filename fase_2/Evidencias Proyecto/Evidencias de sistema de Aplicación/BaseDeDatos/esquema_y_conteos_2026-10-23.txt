@@ -1,0 +1,39 @@
+﻿Tablas (esquema public):
+ - articulos: 9 filas
+ - roles: 3 filas
+ - usuarios: 6 filas
+
+Columnas:
+ articulos
+   id (uuid)
+   slug (text)
+   titulo (text)
+   categoria (USER-DEFINED)
+   resumen (text)
+   contenido (text)
+   estado (USER-DEFINED)
+   autor_id (uuid)
+   creado_en (timestamp with time zone)
+   actualizado_en (timestamp with time zone)
+   publicado_en (timestamp with time zone)
+ roles
+   id (uuid)
+   clave (text)
+   nombre (text)
+   descripcion (text)
+ usuarios
+   id (uuid)
+   nombre (text)
+   correo (text)
+   miembro_desde (timestamp with time zone)
+   rol_id (uuid)
+   password_hash (text)
+   activo (boolean)
+   ultimo_acceso (timestamp with time zone)
+
+Articulos por estado:
+ - borrador: 2
+ - asistido_ia: 1
+ - en_revision: 2
+ - publicado: 4
+
